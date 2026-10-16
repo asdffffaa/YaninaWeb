@@ -1,4 +1,5 @@
 import { telegram } from '../data/catalog';
+import { updatedReviewImages } from '../data/reviews';
 import AboutDesign from '../design/AboutDesign';
 import ApproachDesign from '../design/ApproachDesign';
 import type { DesignOverrides } from '../design/bindDesign';
@@ -9,6 +10,7 @@ import ReviewsDesign from '../design/ReviewsDesign';
 import StepsDesign from '../design/StepsDesign';
 import { DiplomaSlider } from './DiplomaSlider';
 import { ResultsSlider } from './ResultsSlider';
+import { ReviewImage } from './ReviewImage';
 const contact = { as: 'a', href: telegram, target: '_blank', rel: 'noreferrer' };
 export function About() {
   return (
@@ -39,7 +41,39 @@ export function Results() {
 export function Reviews() {
   return (
     <section id="reviews" className="section reviews">
-      <ReviewsDesign overrides={{ '2351:2571': { as: 'h2' }, '2351:2573': contact }} />
+      <ReviewsDesign
+        overrides={{
+          '2351:2571': { as: 'h2' },
+          '2351:2573': contact,
+          '2351:2566': {
+            style: { width: 194, borderRadius: 10 },
+            children: (
+              <ReviewImage
+                src={updatedReviewImages.inspiredToBake}
+                alt="Відгук про натхнення готувати"
+              />
+            ),
+          },
+          '2351:2567': {
+            style: { top: 187, width: 191, height: 129, borderRadius: 11 },
+            children: (
+              <ReviewImage
+                src={updatedReviewImages.clearExplanations}
+                alt="Відгук про зрозумілі пояснення"
+              />
+            ),
+          },
+          '2351:2580': {
+            style: { width: 191, height: 131, borderRadius: 14 },
+            children: (
+              <ReviewImage
+                src={updatedReviewImages.warmAtmosphere}
+                alt="Відгук про теплу атмосферу курсу"
+              />
+            ),
+          },
+        }}
+      />
     </section>
   );
 }

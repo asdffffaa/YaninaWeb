@@ -1,5 +1,6 @@
 import { memo } from 'react';
 import { reviewImages } from '../../data/reviews';
+import { ReviewImage } from '../ReviewImage';
 import { courses, lessons, telegram, type Product } from '../../data/catalog';
 import { type DesignOverrides } from '../../design/bindDesign';
 
@@ -141,9 +142,7 @@ export const MobileHome = memo(function MobileHome({
               children: (
                 <MobileRail step={329} label="Відгуки">
                   {reviewImages.map((src, i) => (
-                    <img
-                      loading="lazy"
-                      decoding="async"
+                    <ReviewImage
                       className="m-review"
                       key={`${src}-${i}`}
                       src={src}
