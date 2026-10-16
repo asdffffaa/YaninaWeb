@@ -1,0 +1,30 @@
+{
+  "name": "yanina-desktop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build && node scripts/finalize-build.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.mjs",
+    "format": "prettier --write src scripts tests server.mjs package.json tsconfig.json playwright.config.ts README.md docs",
+    "format:check": "prettier --check src scripts tests server.mjs package.json tsconfig.json playwright.config.ts README.md docs",
+    "test:browser": "npm run build && playwright test",
+    "typecheck": "tsc --noEmit",
+    "test:bot:static": "python -m unittest discover -s tests -p test_bot_static.py"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "prettier": "3.6.2",
+    "typescript": "~5.9.2",
+    "vite": "^7.1.0"
+  }
+}

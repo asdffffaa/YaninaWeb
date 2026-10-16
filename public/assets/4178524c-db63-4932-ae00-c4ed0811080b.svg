@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="102" height="102" viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1000003359">
+<circle id="Icon circle" cx="51" cy="51" r="50.5" fill="#FFF8F5" stroke="#E6B5B2"/>
+<g id="Payment icon" clip-path="url(#clip0_0_6)">
+<path id="Vector" d="M59.5152 31H31.4848C29.0079 31 27 33.0147 27 35.5V62.5C27 64.9853 29.0079 67 31.4848 67H59.5152C61.9921 67 64 64.9853 64 62.5V35.5C64 33.0147 61.9921 31 59.5152 31Z" stroke="#8E243A" stroke-width="2"/>
+<path id="Vector_2" d="M34.8485 22V32.0588M56.1515 22V32.0588M27 36.5294H64M34.8485 43.2353H41.5758V49.9412H34.8485V43.2353ZM47.1818 43.2353H53.9091V49.9412H47.1818V43.2353ZM34.8485 53.2941H41.5758V60H34.8485V53.2941Z" stroke="#8E243A" stroke-width="2"/>
+<path id="Vector_3" d="M64 76C70.0751 76 75 71.0751 75 65C75 58.9249 70.0751 54 64 54C57.9249 54 53 58.9249 53 65C53 71.0751 57.9249 76 64 76Z" fill="#FFF1EE" stroke="#8E243A" stroke-width="2"/>
+<path id="Vector_4" d="M59 65.5L62.375 69L68 62" stroke="#8E243A" stroke-width="2" stroke-linecap="round"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_6">
+<rect width="50" height="56" fill="white" transform="translate(26 23)"/>
+</clipPath>
+</defs>
+</svg>

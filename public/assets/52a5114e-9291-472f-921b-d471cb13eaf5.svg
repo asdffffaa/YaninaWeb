@@ -1,0 +1,10 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle id="Button arrow circle" cx="15" cy="15" r="15" fill="url(#paint0_linear_0_31)"/>
+<defs>
+<linearGradient id="paint0_linear_0_31" x1="0.0637619" y1="6.18491" x2="31.1477" y2="21.3284" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6E0921"/>
+<stop offset="0.52" stop-color="#A81333"/>
+<stop offset="1" stop-color="#780824"/>
+</linearGradient>
+</defs>
+</svg>

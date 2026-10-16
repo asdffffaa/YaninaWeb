@@ -1,0 +1,14 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1000003429">
+<circle id="Courses / CTA arrow cue" cx="18" cy="18" r="18" fill="url(#paint0_linear_0_44)"/>
+<g id="Courses / CTA arrow">
+<path id="Vector" d="M10.8516 18H23.7087M18.7087 23L23.7087 18L18.7087 13" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_44" x1="18" y1="0" x2="18" y2="36" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B83352"/>
+<stop offset="1" stop-color="#8F1A33"/>
+</linearGradient>
+</defs>
+</svg>

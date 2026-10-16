@@ -1,0 +1,153 @@
+.mobile-site .m-consultation {
+  min-height: 826px;
+  padding: 56px 20px;
+  overflow: visible;
+  z-index: 0;
+  color: #2b1b18;
+}
+.m-consultation-flower {
+  position: absolute;
+  width: 327.654px;
+  height: 319.225px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: -1;
+}
+.m-consultation-flower img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  max-width: none;
+  inset: 0;
+  object-position: bottom;
+}
+.m-consultation-flower-top {
+  left: 97.551px;
+  top: -27.957px;
+  transform: rotate(-89.5deg);
+}
+.m-consultation-flower-bottom {
+  left: -34.869px;
+  top: 523.873px;
+  transform: rotate(90.5deg);
+}
+.m-consultation-steps,
+.m-consultation-contact {
+  position: relative;
+  width: 362px;
+  border: 1px solid #ddd2c7;
+  border-radius: 24px;
+  background: #fffdf8;
+  box-shadow: 0 12px 30px -10px #3a281f1a;
+}
+.m-consultation-steps {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.m-consultation-steps h2 {
+  width: 310px;
+  margin: 0;
+  font:
+    600 34px/38px 'Playfair Display',
+    serif;
+}
+.m-consultation-description {
+  width: 310px;
+  margin: 0;
+  font:
+    400 14px/22px Manrope,
+    sans-serif;
+  color: #746760;
+}
+.m-consultation-steps ol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.m-consultation-steps li {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font:
+    600 16px / normal Manrope,
+    sans-serif;
+}
+.m-consultation-number {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  flex: none;
+  color: white;
+  font:
+    600 22px / normal Manrope,
+    sans-serif;
+}
+.m-consultation-number img {
+  position: absolute;
+  inset: 0;
+}
+.m-consultation-number span {
+  position: relative;
+}
+.m-consultation-contact {
+  margin-top: 20px;
+  height: 232px;
+}
+.m-consultation-telegram {
+  position: absolute;
+  left: 15px;
+  top: 43px;
+}
+.m-consultation-question {
+  position: absolute;
+  left: 91px;
+  top: 39px;
+  width: 251px;
+  margin: 0;
+  font:
+    600 20px/30px Manrope,
+    sans-serif;
+}
+.m-consultation-handle {
+  position: absolute;
+  left: 91px;
+  top: 111px;
+  font:
+    600 17px / normal Manrope,
+    sans-serif;
+  color: #b84054;
+  text-decoration: none;
+}
+.m-consultation-button {
+  position: absolute;
+  top: 167px;
+  left: 15px;
+  width: 332px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: var(--main-button-gradient);
+  font:
+    600 20px / normal Manrope,
+    sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.m-consultation-button img {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}

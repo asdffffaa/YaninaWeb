@@ -1,0 +1,21 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Instagram">
+<path id="Vector" d="M36.6667 9.16667H18.3333C13.2707 9.16667 9.16667 13.2707 9.16667 18.3333V36.6667C9.16667 41.7293 13.2707 45.8333 18.3333 45.8333H36.6667C41.7293 45.8333 45.8333 41.7293 45.8333 36.6667V18.3333C45.8333 13.2707 41.7293 9.16667 36.6667 9.16667Z" stroke="url(#paint0_linear_0_42)" stroke-width="4"/>
+<path id="Vector_2" d="M27.5 36.6667C32.5626 36.6667 36.6667 32.5626 36.6667 27.5C36.6667 22.4374 32.5626 18.3333 27.5 18.3333C22.4374 18.3333 18.3333 22.4374 18.3333 27.5C18.3333 32.5626 22.4374 36.6667 27.5 36.6667Z" stroke="url(#paint1_linear_0_42)" stroke-width="4"/>
+<path id="Vector_3" d="M38.9583 18.5625C40.3506 18.5625 41.4792 17.4339 41.4792 16.0417C41.4792 14.6494 40.3506 13.5208 38.9583 13.5208C37.5661 13.5208 36.4375 14.6494 36.4375 16.0417C36.4375 17.4339 37.5661 18.5625 38.9583 18.5625Z" fill="url(#paint2_linear_0_42)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_42" x1="9.16667" y1="27.5" x2="45.8333" y2="27.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B83352"/>
+<stop offset="1" stop-color="#8F1A33"/>
+</linearGradient>
+<linearGradient id="paint1_linear_0_42" x1="18.3333" y1="27.5" x2="36.6667" y2="27.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B83352"/>
+<stop offset="1" stop-color="#8F1A33"/>
+</linearGradient>
+<linearGradient id="paint2_linear_0_42" x1="36.4375" y1="16.0417" x2="41.4792" y2="16.0417" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B83352"/>
+<stop offset="1" stop-color="#8F1A33"/>
+</linearGradient>
+</defs>
+</svg>

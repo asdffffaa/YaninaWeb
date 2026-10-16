@@ -1,0 +1,1756 @@
+/* Per-layer gradient stops must not inherit the Hero background palette. */
+*,
+::before,
+::after {
+  --from: initial;
+  --via: initial;
+  --to: initial;
+  --from-stop: initial;
+  --via-stop: initial;
+  --to-stop: initial;
+  --direction: initial;
+}
+[data-node-id='2351:2505'] {
+  font-family: Manrope, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+}
+.rotate-63 {
+  rotate: 63deg;
+}
+[data-node-id='2351:2358'],
+[data-node-id='2351:2359'],
+.diploma-stage {
+  pointer-events: none;
+}
+.course-card {
+  cursor: pointer;
+}
+.progress-track > span {
+  transition: left 350ms ease;
+}
+
+.results-viewport {
+  width: 1274px;
+  height: 453px;
+  overflow: hidden;
+}
+.results-track {
+  display: flex;
+  gap: 64px;
+  width: max-content;
+  transition: transform 350ms ease;
+  will-change: transform;
+}
+.result-pair {
+  display: flex;
+  gap: 31.5px;
+  width: 605px;
+  flex: none;
+  height: 453px;
+}
+.result-photo {
+  width: 286.5px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.result-label {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff0e5;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
+}
+.result-label > img {
+  width: 96px;
+  height: 4px;
+  object-fit: fill;
+}
+.result-label > img:last-child {
+  transform: rotate(180deg);
+}
+.result-image {
+  width: 286.5px;
+  height: 418px;
+  border: 1px solid #fff2e5;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.result-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+[data-node-id='2351:2548'],
+[data-node-id='2351:2552'] {
+  z-index: 3;
+}
+
+.diploma-stage {
+  width: 1920px;
+  height: 654px;
+  position: relative;
+  isolation: isolate;
+}
+.diploma-slide {
+  position: absolute;
+  left: 749px;
+  top: 261px;
+  width: 424px;
+  height: 299px;
+  transform-origin: top left;
+  transition:
+    transform 1100ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 1100ms ease;
+  will-change: transform;
+}
+.diploma-slide.active {
+  transform: translate3d(0, 0, 0) scale(1);
+  z-index: 3;
+}
+.diploma-slide.left {
+  transform: translate3d(-438px, -169px, 0) scale(0.79245283);
+  z-index: 1;
+}
+.diploma-slide.right {
+  transform: translate3d(524px, -169px, 0) scale(0.79245283);
+  z-index: 1;
+}
+.diploma-crop {
+  position: relative;
+  width: 424px;
+  height: 299px;
+  overflow: hidden;
+}
+.diploma-crop > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.diploma-crop > .diploma-cropped {
+  position: static;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.diploma-shade {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  transition: opacity 1100ms ease;
+}
+.diploma-slide.active .diploma-shade {
+  opacity: 0;
+}
+[data-node-id='2351:2600'],
+[data-node-id='2351:2605'],
+[data-node-id='2351:2593'] {
+  z-index: 5;
+}
+
+.payment-conditions {
+  width: 1104px;
+  height: 709px;
+  border: 1px solid #e8c2bf;
+  border-radius: 24px;
+  background: #fffdf8;
+  box-shadow: 0 12px 32px rgba(43, 27, 24, 0.12);
+  position: relative;
+  padding: 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.conditions-eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  color: #9e3046;
+  letter-spacing: 0.21px;
+}
+.payment-conditions h2 {
+  font:
+    600 46px/50px 'Playfair Display',
+    serif;
+  max-width: 900px;
+}
+.payment-conditions > p:not(.conditions-eyebrow) {
+  font-size: 17px;
+  line-height: 28px;
+  max-width: 840px;
+  color: #746760;
+}
+.conditions-close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 38px;
+  height: 38px;
+}
+.conditions-close > img {
+  width: 38px;
+  height: 38px;
+}
+.conditions-done {
+  height: 54px;
+  width: 210px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #b83352 0%, #8f1a33 100%);
+  color: #fffcfa;
+  font-weight: 600;
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Source image uses the precise crop transform exported from Figma. */
+[data-node-id='2351:2197'] > img {
+  width: 2619.99px;
+  height: 873px;
+  left: -349.64px;
+  top: 0;
+  filter: brightness(0.88) contrast(1.09) saturate(1.05);
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track,
+  .results-track,
+  .diploma-slide,
+  .diploma-shade,
+  .faq-reveal,
+  .faq-ornament,
+  .progress-track > span {
+    transition: none !important;
+  }
+}
+
+/* Allow complete ornaments and shadows across section boundaries. The canvas clips only the outer page edge. */
+[data-node-id='2351:2469'],
+[data-node-id='2351:2473'] {
+  overflow: visible;
+}
+[data-node-id='2351:2495'] {
+  pointer-events: none;
+  z-index: -1;
+}
+[data-node-id='2351:2422'] {
+  left: 954px;
+  top: -260px;
+  overflow: visible;
+  transform: none;
+  pointer-events: none;
+  z-index: -1;
+}
+[data-node-id='2351:2093'],
+[data-node-id='2351:2094'] {
+  pointer-events: none;
+  z-index: 1;
+}
+[data-node-id='2351:2358'] {
+  left: 0;
+  z-index: -1;
+}
+[data-node-id='2351:2359'] {
+  left: 1315px;
+  z-index: -1;
+}
+/* Each page has full cards, space for shadows and a clear gutter before the arrows. */
+.carousel {
+  width: 1274px;
+  position: relative;
+  z-index: 2;
+}
+.carousel-viewport {
+  width: 1346px;
+  padding: 36px;
+  margin: -36px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+.carousel-viewport.dragging {
+  cursor: grabbing;
+}
+.carousel-track {
+  display: flex;
+  gap: 72px;
+  width: max-content;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+.carousel-page {
+  width: 1274px;
+  flex: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: stretch;
+}
+.carousel-page img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+.carousel-arrow {
+  top: calc(50% - 25px) !important;
+  left: -94px;
+  width: 50px;
+  height: 50px;
+}
+.carousel-arrow.next {
+  right: -94px;
+  left: auto;
+}
+.carousel-arrow:disabled {
+  opacity: 0.3;
+}
+.carousel-progress {
+  width: 1274px;
+}
+.progress-track {
+  height: 28px;
+  width: 1060px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+.progress-track:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #e3b0ba;
+}
+.progress-track > span {
+  height: 3px;
+  transition: left 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+.progress-track input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 28px;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+.progress-track:focus-within {
+  outline: 2px solid #b83352;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+.carousel-progress.dark .progress-track {
+  background: transparent;
+}
+.carousel-progress.dark .progress-track:before {
+  background: #e8b1b5;
+}
+.carousel-progress.dark .progress-track > span {
+  background: #fff4eb;
+}
+.carousel-progress.dark .progress-counter {
+  background: transparent;
+}
+.results-carousel .carousel-page {
+  gap: 64px;
+}
+.result-image > img {
+  object-fit: contain;
+  background: #291713;
+}
+.result-image {
+  background: #291713;
+}
+.course-card {
+  box-shadow: 0 8px 18px rgba(46, 3, 10, 0.1);
+}
+.course-copy h3,
+.course-card:first-child h3 {
+  width: 285px;
+  font-size: 34px;
+  line-height: 36px;
+  height: 78px;
+}
+.course-level {
+  white-space: normal;
+  min-height: 15px;
+}
+.small-card h3,
+.recipe-card h3,
+.recipe-card.popular h3 {
+  font-size: 29px;
+  line-height: 32px;
+  height: 74px;
+  width: 272px;
+  margin: 14px 0 0;
+}
+.small-description,
+.recipe-card .small-description,
+.recipe-card.popular .small-description {
+  font-size: 15px;
+  line-height: 20px;
+  margin: 10px 0 0;
+}
+.lesson-card:not(:first-child) h3,
+.lesson-card:not(:first-child) .small-description,
+.lesson-card:not(:first-child) .small-meta {
+  margin-left: 0;
+}
+.tech-grid {
+  gap: 32px 10px;
+  justify-content: center;
+}
+.tech-cards.expanded [data-node-id='2351:2095'] {
+  height: 100%;
+}
+.faq-reveal {
+  transition: grid-template-rows 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.faq-ornament {
+  transition: opacity 650ms ease;
+}
+/* Product dialogs reproduce the compact 80% browser-zoom layout locally. */
+.modal-overlay {
+  padding: 32px;
+  overscroll-behavior: contain;
+}
+.modal-overlay.course {
+  padding: 25.6px;
+}
+.modal-dialog.course {
+  zoom: 0.8;
+  width: min(1440px, calc(125vw - 64px));
+  height: auto;
+  max-height: calc(125dvh - 64px);
+}
+.product-modal {
+  height: min(920px, calc(125dvh - 64px));
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 26px;
+  background: #fffdf8;
+  border: 1px solid #e8c2bf;
+  box-shadow: 0 24px 70px #180c1640;
+  overflow: hidden;
+}
+.product-modal-close {
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  width: 44px;
+  height: 44px;
+  z-index: 3;
+  border-radius: 50%;
+  background: #fffdf8;
+  display: grid;
+  place-items: center;
+}
+.product-modal-close img {
+  width: 34px;
+  height: 34px;
+}
+.product-modal-body {
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(300px, 1fr);
+  gap: 48px;
+  padding: 48px 54px 36px;
+  scrollbar-color: #9e3046 #f5e9e3;
+  scrollbar-width: thin;
+}
+.product-eyebrow {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  color: #9e0521;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.product-modal h1,
+.product-modal h2 {
+  font: 600 48px/1.12 var(--serif);
+  margin-bottom: 22px;
+}
+.product-modal h3 {
+  font:
+    700 17px/26px Manrope,
+    sans-serif;
+  color: #9e0521;
+  margin-bottom: 14px;
+}
+.product-intro,
+.product-audience p {
+  font-size: 18px;
+  line-height: 29px;
+  color: #63554f;
+}
+.product-modal-copy section {
+  margin-top: 28px;
+}
+.product-audience {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e8c2bf;
+}
+.product-program {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.product-program li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e8c2bf;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  min-height: 60px;
+}
+.product-program li span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(90deg, #b83352, #8f1a33);
+  font-size: 15px;
+}
+.product-outcomes {
+  margin: 0;
+  padding-left: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 30px;
+  font-size: 17px;
+  line-height: 26px;
+}
+.product-outcomes li::marker {
+  color: #b83352;
+}
+.product-modal-photo {
+  width: 100%;
+  height: 390px;
+  object-fit: contain;
+  background: #f7f0e8;
+  border-radius: 20px;
+}
+.product-format {
+  padding: 24px;
+  border: 1px solid #e8c2bf;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.product-format p {
+  font-size: 17px;
+  line-height: 26px;
+  padding: 12px 0;
+  border-top: 1px solid #ead1ca;
+}
+.product-modal-footer {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 54px;
+  background: #fffaf5;
+  border-top: 1px solid #e8c2bf;
+}
+.product-modal-price {
+  font-size: 30px;
+  font-weight: 700;
+  color: #9e0521;
+  margin-right: auto;
+  white-space: nowrap;
+}
+.product-return {
+  font-size: 16px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.product-purchase,
+.conditions-done {
+  background: linear-gradient(90deg, #b83352, #8f1a33);
+  color: white;
+  min-height: 58px;
+  padding: 16px 32px;
+  border-radius: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 5px 12px #8f1a3320;
+}
+.payment-conditions {
+  width: 100%;
+  height: auto;
+  min-height: 520px;
+  max-height: calc(100dvh - 64px);
+  overflow: auto;
+  padding: 60px;
+  gap: 28px;
+}
+.payment-conditions h2 {
+  font-size: 48px;
+  line-height: 1.15;
+  max-width: 1100px;
+}
+.payment-conditions > p:not(.conditions-eyebrow) {
+  font-size: 21px;
+  line-height: 34px;
+  max-width: 1100px;
+}
+.conditions-eyebrow {
+  font-size: 16px;
+}
+.conditions-close {
+  right: 20px;
+  top: 18px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e8c2bf;
+  border-radius: 50%;
+  background: #fffdf8;
+}
+.conditions-close > img {
+  width: 26px;
+  height: 26px;
+}
+.conditions-done {
+  width: auto;
+  min-width: 250px;
+  margin: 8px 0 0 auto;
+  align-self: flex-end;
+}
+@media (max-width: 1100px) {
+  .product-modal-body {
+    gap: 28px;
+    padding: 44px 30px 28px;
+    grid-template-columns: minmax(0, 1.3fr) minmax(260px, 1fr);
+  }
+  .product-modal h2 {
+    font-size: 38px;
+  }
+  .product-program {
+    grid-template-columns: 1fr;
+  }
+  .product-modal-footer {
+    padding: 20px 30px;
+  }
+  .product-modal-photo {
+    height: 330px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track,
+  .diploma-slide,
+  .diploma-shade,
+  .faq-reveal,
+  .faq-ornament,
+  .progress-track > span {
+    transition: none !important;
+  }
+}
+/* Keep illustrated backgrounds within their own panels; only the requested pale-section ornaments cross boundaries. */
+.learning-paths,
+.about,
+.courses,
+.tech-cards,
+.consultation {
+  overflow: visible;
+}
+
+/* Courses retain the exact Figma geometry and reveal 34px of the next card. */
+.courses .carousel-viewport {
+  width: 1274px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.courses .carousel-track {
+  gap: 10px;
+}
+.courses .carousel-page {
+  width: 1230px;
+  justify-content: flex-start;
+}
+.courses .carousel-arrow {
+  left: -58px;
+  top: 160px !important;
+}
+.courses .carousel-arrow.next {
+  left: auto;
+  right: -58px;
+}
+.courses .carousel-progress {
+  width: 1234px;
+}
+.courses .progress-track {
+  width: 1024px;
+}
+.courses .progress-track:before,
+.courses .progress-track > span {
+  height: 2px;
+}
+.courses .course-card {
+  position: relative;
+  display: block;
+  box-shadow: none;
+  background: #fffcf8;
+}
+.courses .course-cover {
+  position: absolute;
+  left: 19px;
+  top: 23px;
+}
+.courses .course-copy {
+  position: absolute;
+  left: 274px;
+  top: 23px;
+  display: block;
+}
+.courses .course-level {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  min-height: 0;
+}
+.courses .course-copy h3 {
+  position: absolute;
+  top: 28px;
+  margin: 0;
+  width: 231px;
+  font-size: 36px;
+  line-height: 34px;
+  height: auto;
+}
+.courses .courses .course-card h3 {
+  width: 180px;
+}
+.courses .course-description {
+  position: absolute;
+  top: 108px;
+  margin: 0;
+  width: 285px;
+}
+.courses .course-meta {
+  position: absolute;
+  top: 217px;
+  margin: 0;
+  gap: 8px;
+}
+.courses .course-details {
+  position: absolute;
+  top: 275px;
+  margin: 0;
+}
+
+/* Animate layout coordinates inside the scaled desktop canvas to avoid compositor zoom overshoot. */
+.courses .carousel-track {
+  position: relative;
+  transform: none;
+  will-change: auto;
+  transition: left 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.courses .carousel-viewport {
+  overflow: clip;
+}
+
+/* Mini lessons: four 304px cards, a 10px gap and an 18px preview. */
+.mini-courses .carousel-viewport {
+  width: 1274px;
+  padding: 0;
+  margin: 0;
+  overflow: clip;
+}
+.mini-courses .carousel-track {
+  position: relative;
+  gap: 10px;
+  transform: none;
+  will-change: auto;
+  transition: left 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mini-courses .carousel-page {
+  width: 1246px;
+  justify-content: flex-start;
+}
+.mini-courses .carousel-arrow {
+  left: -58px;
+  top: 185px !important;
+}
+.mini-courses .carousel-arrow.next {
+  left: auto;
+  right: -58px;
+}
+.mini-courses .carousel-progress {
+  width: 1234px;
+}
+.mini-courses .progress-track {
+  width: 1024px;
+}
+.mini-courses .progress-track:before,
+.mini-courses .progress-track > span {
+  height: 2px;
+}
+.mini-courses .lesson-card {
+  background: #fffcf8;
+}
+.mini-courses .lesson-card h3 {
+  width: 258px;
+  height: auto;
+  flex: none;
+  font-size: 36px;
+  line-height: 28px;
+  margin: 18px 0 0;
+}
+.mini-courses .lesson-card .small-description {
+  width: 260px;
+  max-width: 260px;
+  font-size: 15px;
+  line-height: 19px;
+  margin: 16px 0 0;
+  flex: none;
+}
+.mini-courses .lesson-card:not(:first-child) h3,
+.mini-courses .lesson-card:not(:first-child) .small-description,
+.mini-courses .lesson-card:not(:first-child) .small-meta {
+  margin-left: 7px;
+}
+.mini-courses .lesson-card .small-meta {
+  position: absolute;
+  left: 15px;
+  top: 324px;
+  margin-top: 0;
+}
+.mini-courses .lesson-card .small-details {
+  position: absolute;
+  left: 15px;
+  top: 363px;
+  margin: 0;
+}
+.mini-courses .small-details > span:first-child {
+  padding-right: 34px;
+}
+.mini-courses .small-arrow {
+  left: 236.5px;
+  right: auto;
+  top: 2.5px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .mini-courses .carousel-track,
+  .courses .carousel-track {
+    transition: none !important;
+  }
+}
+
+.mini-courses .small-details {
+  background: #fff9f3;
+  border-color: #b83352;
+  color: #a30f1f;
+}
+
+/* Recipe carousel uses the same continuous motion as courses and mini lessons. */
+.tech-cards .carousel-viewport {
+  width: 1274px;
+  padding: 16px 0 24px;
+  margin: -16px 0 -24px;
+  overflow: clip;
+}
+.tech-cards .carousel-track {
+  position: relative;
+  gap: 10px;
+  transform: none;
+  will-change: auto;
+  transition: left 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tech-cards .carousel-page {
+  width: 1246px;
+  justify-content: flex-start;
+}
+.tech-cards .carousel-arrow {
+  left: -58px;
+  top: 197px !important;
+}
+.tech-cards .carousel-arrow.next {
+  left: auto;
+  right: -58px;
+}
+.tech-cards .carousel-progress {
+  width: 1234px;
+}
+.tech-cards .progress-track {
+  width: 1024px;
+}
+.tech-cards .progress-track:before,
+.tech-cards .progress-track > span {
+  height: 2px;
+}
+.tech-cards [data-node-id='2351:2170'],
+.tech-cards [data-node-id='2351:2185'] {
+  z-index: 4;
+  pointer-events: auto;
+}
+.tech-cards [data-node-id='2351:2187'],
+.tech-cards [data-node-id='2351:2188'] {
+  pointer-events: none;
+}
+.tech-cards .recipe-card {
+  background: #fffcf8;
+  border: 1px solid #b83352;
+  box-shadow: none;
+}
+.tech-cards .recipe-card h3 {
+  font-size: 32px;
+  line-height: 35px;
+  width: 266px;
+  height: 70px;
+  margin: 8px 0 0 7px;
+}
+.tech-cards .recipe-card .small-description {
+  font-size: 15px;
+  line-height: 19px;
+  margin: 12px 0 0 7px;
+}
+.tech-cards .recipe-card.popular h3 {
+  width: 274px;
+  height: 35px;
+  margin: 15px 0 0;
+}
+.tech-cards .recipe-card.popular .small-description {
+  margin: 12px 0 0;
+}
+.tech-cards .small-details {
+  background: #fff9f3;
+  border-color: #b83352;
+  color: #a30f1f;
+}
+.tech-cards .small-details > span:first-child {
+  position: absolute;
+  left: 111.5px;
+  top: 8.5px;
+  transform: translateX(-50%);
+  width: 226px;
+  text-align: center;
+  padding: 0;
+}
+.tech-cards .small-arrow {
+  left: 236.5px;
+  right: auto;
+  top: 2.5px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tech-cards .carousel-track {
+    transition: none !important;
+  }
+}
+
+.results-carousel .carousel-viewport {
+  width: 1274px;
+  padding: 0;
+  margin: 0;
+  overflow: clip;
+  cursor: default;
+}
+.results-carousel .carousel-track {
+  position: relative;
+  gap: 64px;
+  transform: none;
+  will-change: auto;
+  transition: left 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.results-carousel .carousel-arrow {
+  left: -58px;
+  top: 202px !important;
+}
+.results-carousel .carousel-arrow.next {
+  left: auto;
+  right: -58px;
+}
+.results .result-image > img {
+  object-fit: cover;
+}
+@media (prefers-reduced-motion: reduce) {
+  .results-carousel .carousel-track {
+    transition: none !important;
+  }
+}
+
+/* Five certificates keep their original proportions; brightness affects image pixels only. */
+.certificate-stage .diploma-slide {
+  left: 749px;
+  top: 215px;
+  width: 424px;
+  height: 390px;
+  transform: none;
+  opacity: 0;
+  will-change: auto;
+  transition:
+    left 1100ms cubic-bezier(0.4, 0, 0.2, 1),
+    top 1100ms cubic-bezier(0.4, 0, 0.2, 1),
+    width 1100ms cubic-bezier(0.4, 0, 0.2, 1),
+    height 1100ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 700ms ease;
+}
+.certificate-stage .diploma-slide.active {
+  left: 749px;
+  top: 215px;
+  width: 424px;
+  height: 390px;
+  opacity: 1;
+  z-index: 3;
+}
+.certificate-stage .diploma-slide.left {
+  left: 311px;
+  top: 72px;
+  width: 336px;
+  height: 310px;
+  opacity: 1;
+  z-index: 2;
+}
+.certificate-stage .diploma-slide.right {
+  left: 1273px;
+  top: 72px;
+  width: 336px;
+  height: 310px;
+  opacity: 1;
+  z-index: 2;
+}
+.certificate-stage .diploma-slide.off-left {
+  left: 0;
+  top: 72px;
+  width: 280px;
+  height: 260px;
+  z-index: 0;
+}
+.certificate-stage .diploma-slide.off-right {
+  left: 1640px;
+  top: 72px;
+  width: 280px;
+  height: 260px;
+  z-index: 0;
+}
+.certificate-stage .diploma-crop {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.certificate-stage .diploma-crop > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0.4);
+  transition: filter 1100ms ease;
+}
+.certificate-stage .active .diploma-crop > img {
+  filter: brightness(1);
+}
+.certificate-dots {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.certificate-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #212121;
+}
+.certificate-dots button[aria-current='true'] {
+  background: #b83352;
+}
+@media (prefers-reduced-motion: reduce) {
+  .certificate-stage .diploma-slide,
+  .certificate-stage .diploma-crop > img {
+    transition: none !important;
+  }
+}
+
+/* Keep certificates and pagination in separate, stable layout zones. */
+.certificate-stage .diploma-slide.active {
+  top: 180px;
+  height: 380px;
+}
+.diplomas [data-node-id='2351:2593'] {
+  left: 50%;
+  top: 596px;
+  width: 110px;
+  height: 24px;
+  transform: none;
+  translate: -50% 0;
+  overflow: visible;
+}
+.diplomas [data-node-id='2351:2600'],
+.diplomas [data-node-id='2351:2605'] {
+  top: 345px;
+}
+.certificate-dots {
+  gap: 10px;
+}
+.certificate-dots button {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  transition: background-color 250ms ease;
+}
+/* Checkout: compact one/two-item summary, natural page growth for longer orders. */
+.checkout-summary {
+  height: 100%;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+}
+.checkout-summary .cart-heading {
+  flex: none;
+  width: 564px;
+}
+.checkout-rows {
+  margin-top: 14px;
+  max-height: none;
+  overflow: visible;
+  flex: none;
+  gap: 14px;
+}
+.checkout-summary .cart-total {
+  margin-top: 14px;
+  padding-top: 12px;
+  height: 79px;
+  align-items: flex-start;
+  flex: none;
+  width: 564px;
+}
+.checkout-delivery {
+  height: 70px;
+  width: 564px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 0 0 36px;
+  margin-top: auto;
+}
+.checkout-delivery > img {
+  width: 31px;
+  height: 34px;
+  flex: none;
+}
+.checkout-delivery > p {
+  font-size: 15px;
+  line-height: 20px;
+}
+.checkout-notice {
+  position: relative;
+  top: auto;
+  margin-top: 20px;
+}
+.checkout-summary-long .cart-total {
+  margin-top: 0;
+}
+.checkout-summary-short {
+  padding-bottom: 26px;
+}
+.checkout-consent input {
+  appearance: none;
+  flex: none;
+  border: 1px solid #ddd2c7;
+  border-radius: 50%;
+  background: transparent;
+}
+.checkout-consent input:checked {
+  border: 0;
+  background: url('/assets/49c15e96-71b5-4ecc-b041-2c86b5faf642.svg') center/23px 23px no-repeat;
+}
+/* Shared persistent navigation, matching the updated Figma header. */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  flex: none;
+}
+.header [data-node-id='2351:2500'] > a {
+  font-size: 18px;
+  color: #0d171a;
+  transition: color 180ms ease;
+}
+.header [data-node-id='2351:2500'] > a[aria-current],
+.header [data-node-id='2351:2500'] > a:hover {
+  color: #9e0f21;
+}
+.header [data-node-id='2351:2508'] {
+  font-size: 16px;
+  font-weight: 700;
+}
+.section[id],
+.hero[id] {
+  scroll-margin-top: 86px;
+}
+.catalog-toolbar-boundary {
+  position: absolute;
+  top: 265px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: 6;
+}
+.catalog-toolbar {
+  height: 72px;
+  padding: 12px 265px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  pointer-events: auto;
+  background: rgb(247 242 234 / var(--panel-opacity, 0));
+  position: relative;
+}
+.tech-cards.expanded .catalog-toolbar {
+  position: sticky;
+  top: 86px;
+}
+.catalog-filters {
+  display: flex;
+  gap: 4px;
+  padding-top: 7px;
+}
+.catalog-toggle {
+  display: grid;
+  place-items: center;
+  width: 235px;
+  height: 48px;
+  overflow: clip;
+  border-radius: 22px;
+  background: linear-gradient(90deg, #b83352, #8f1a33);
+  color: white;
+  font:
+    800 16px/16px Manrope,
+    sans-serif;
+  text-align: center;
+  white-space: nowrap;
+}
+.catalog-toggle:disabled,
+.catalog-filters button:disabled {
+  cursor: default;
+}
+.tech-cards {
+  overflow-anchor: none;
+}
+.tech-cards .tech-grid {
+  row-gap: 32px;
+}
+
+.catalog-filters .filter:not(.selected) {
+  background: #f7f2ea;
+}
+
+.catalog-toolbar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #b83352;
+  opacity: var(--panel-opacity, 0);
+  pointer-events: none;
+}
+.desktop-canvas:has(.catalog-toolbar.is-pinned) .header [data-node-id='2351:2496'] {
+  border-bottom-color: transparent;
+  box-shadow: none;
+}
+
+/* Shared hover treatment for the main course cards. */
+.courses .course-card {
+  transition:
+    background-color 280ms ease,
+    border-color 280ms ease,
+    box-shadow 280ms ease;
+  cursor: pointer;
+}
+.courses .course-card .course-cover > img {
+  transition: transform 280ms ease;
+}
+.courses .course-card .course-details {
+  transition:
+    background-color 280ms ease,
+    color 280ms ease,
+    border-color 280ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .courses .course-card:hover {
+    background-color: #fff;
+    border-color: #9e1b38;
+    box-shadow: 0 0 18px rgba(64, 31, 26, 0.16);
+  }
+  .courses .course-card:hover .course-cover > img {
+    transform: scale(1.03);
+  }
+  .courses .course-card .course-details:hover {
+    background-color: #b83352;
+    border-color: #b83352;
+    color: #fff;
+  }
+}
+.courses .course-card .course-details:focus-visible {
+  background-color: #b83352;
+  color: #fff;
+}
+@media (prefers-reduced-motion: reduce) {
+  .courses .course-card,
+  .courses .course-card .course-cover > img,
+  .courses .course-card .course-details {
+    transition: none;
+  }
+}
+/* Allow the hover shadow outside the first card without widening the right-hand preview. */
+.courses .carousel-viewport {
+  overflow: visible;
+  clip-path: inset(-32px 0 -32px 0);
+}
+.courses .carousel-viewport:has(.carousel-track[data-slide-index='0']) {
+  clip-path: inset(-32px 0 -32px -32px);
+}
+/* Mini lessons share the course hover treatment. */
+.mini-courses .lesson-card {
+  box-shadow: none;
+  transition:
+    background-color 280ms ease,
+    border-color 280ms ease,
+    box-shadow 280ms ease;
+}
+.mini-courses .small-cover > img {
+  transition: transform 280ms ease;
+}
+.mini-courses .small-details {
+  transition:
+    background-color 280ms ease,
+    color 280ms ease,
+    border-color 280ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .mini-courses .lesson-card:hover {
+    background: #fff;
+    border-color: #9e1b38;
+    box-shadow: 0 0 18px rgba(64, 31, 26, 0.16);
+  }
+  .mini-courses .lesson-card:hover .small-cover > img {
+    transform: scale(1.03);
+  }
+  .mini-courses .small-details:hover {
+    background: #b83352;
+    border-color: #b83352;
+    color: #fff;
+  }
+}
+.mini-courses .lesson-card:focus-visible {
+  background: #fff;
+  border-color: #9e1b38;
+  box-shadow: 0 0 18px rgba(64, 31, 26, 0.16);
+}
+.mini-courses .lesson-card:focus-visible .small-details {
+  background: #b83352;
+  color: #fff;
+}
+.mini-courses .carousel-viewport {
+  overflow: visible;
+  clip-path: inset(-32px 0 -32px 0);
+}
+.mini-courses .carousel-viewport:has(.carousel-track[data-slide-index='0']) {
+  clip-path: inset(-32px 0 -32px -32px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .mini-courses .lesson-card,
+  .mini-courses .small-cover > img,
+  .mini-courses .small-details {
+    transition: none;
+  }
+}
+/* Recipe cards: the same hover treatment in carousel and expanded catalog. */
+.tech-cards .recipe-card {
+  transition:
+    background-color 280ms ease,
+    border-color 280ms ease,
+    box-shadow 280ms ease;
+}
+.tech-cards .small-cover > img {
+  transition: transform 280ms ease;
+}
+.tech-cards .small-details {
+  transition:
+    background-color 280ms ease,
+    color 280ms ease,
+    border-color 280ms ease;
+}
+@media (hover: hover) and (pointer: fine) {
+  .tech-cards .recipe-card:hover {
+    background: #fff;
+    border-color: #9e1b38;
+    box-shadow: 0 0 18px rgba(64, 31, 26, 0.16);
+  }
+  .tech-cards .recipe-card:hover .small-cover > img {
+    transform: scale(1.03);
+  }
+  .tech-cards .small-details:hover {
+    background: #b83352;
+    border-color: #b83352;
+    color: #fff;
+  }
+}
+.tech-cards .recipe-card:focus-visible {
+  background: #fff;
+  border-color: #9e1b38;
+  box-shadow: 0 0 18px rgba(64, 31, 26, 0.16);
+}
+.tech-cards .recipe-card:focus-visible .small-details {
+  background: #b83352;
+  color: #fff;
+}
+.tech-cards .carousel-viewport {
+  overflow: visible;
+  clip-path: inset(-32px 0 -32px 0);
+}
+.tech-cards .carousel-viewport:has(.carousel-track[data-slide-index='0']) {
+  clip-path: inset(-32px 0 -32px -32px);
+}
+.tech-cards.expanded [data-node-id='2351:2103'] {
+  overflow-clip-margin: 32px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .tech-cards .recipe-card,
+  .tech-cards .small-cover > img,
+  .tech-cards .small-details {
+    transition: none;
+  }
+}
+@keyframes dialog-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .modal-dialog {
+    animation: dialog-appear 260ms ease-out;
+  }
+}
+/* Figma: Main color for button. Keep modal typography and outer dimensions. */
+.payment [data-name='Popular badge'],
+.payment-popular {
+  background: var(--main-button-gradient) !important;
+}
+.product-purchase,
+.product-program li > span {
+  background: var(--main-button-gradient);
+}
+.product-audience {
+  position: relative;
+  padding-left: 66px;
+}
+.product-audience-icon,
+.product-outcome-icon,
+.product-format-icon {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  background: #fae3e0;
+  border-radius: 50%;
+}
+.product-audience-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+}
+.product-outcomes {
+  list-style: none;
+  padding-left: 0;
+}
+.product-outcomes li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.product-outcome-icon {
+  width: 34px;
+  height: 34px;
+}
+.product-format p {
+  position: relative;
+  padding-left: 40px;
+}
+.product-format-icon {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+}
+.product-footer-badges {
+  display: flex;
+  gap: 12px;
+}
+.product-footer-badges > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  height: 40px;
+  border: 1px solid #e0a8a8;
+  border-radius: 10px;
+  color: #9e0521;
+  font:
+    700 12px/18px Manrope,
+    sans-serif;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .product-footer-badges {
+    display: none;
+  }
+}
+/* Shared typography for section overlines, independent of the exported layer font. */
+.section-eyebrow {
+  font-family: Manrope, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 20px !important;
+  letter-spacing: 1.12px !important;
+}
+.consultation .d242,
+.consultation .d243,
+.consultation .d244 {
+  width: 240px;
+  height: 326px;
+  top: 0;
+}
+.consultation .d242 {
+  left: 0;
+}
+.consultation .d243 {
+  left: auto;
+  right: 0;
+}
+.consultation .d242 img,
+.consultation .d244 img {
+  object-fit: contain;
+}
+.faq-reveal {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  transition: height 350ms ease;
+}
+.faq-reveal-inner {
+  overflow: visible;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-reveal {
+    transition: none;
+  }
+}
+
+/* Only the answer changes height; the question and its icon stay in place. */
+.faq-item {
+  overflow-anchor: none;
+}
+.faq-question {
+  -webkit-tap-highlight-color: transparent;
+}
+.faq-icon {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  flex: 0 0 22px;
+}
+.faq-icon::before,
+.faq-icon::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  width: 18px;
+  height: 1.5px;
+  border-radius: 1px;
+  background: var(--main-button-gradient);
+}
+.faq-icon::after {
+  transform: rotate(90deg);
+  transition:
+    transform 350ms ease,
+    opacity 350ms ease;
+}
+.faq-item.open .faq-icon::after {
+  transform: rotate(0deg);
+  opacity: 0;
+}
+.faq-answer .faq-ornament {
+  top: 0;
+  opacity: 1;
+  pointer-events: none;
+}
+.faq-answer,
+.faq-item.open .faq-answer {
+  padding-top: 40px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-icon::after {
+    transition: none;
+  }
+}
+
+/* Keep the scrollbar in the panel's padding, with a clear content gutter. */
+.cart-panel .cart-rows {
+  width: calc(100% + 12px);
+  padding-right: 12px;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+}
+.cart-panel .product-row {
+  width: 100%;
+}
+[data-node-id='2351:2430'] {
+  width: auto;
+  white-space: nowrap;
+}
+[data-node-id='2351:2433'] {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  height: auto;
+  white-space: normal;
+}
+[data-node-id='2351:2433'] > div {
+  position: static;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  overflow: visible;
+  text-align: center;
+}
+[data-node-id='2351:2433'] > div > p {
+  position: static;
+  margin: 0;
+  width: 100%;
+}
+[data-node-id='2351:2433'] > div > p:last-child {
+  font-size: 16px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+.product-modal-footer .product-purchase {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.product-modal-footer .product-return {
+  flex: 0 0 auto;
+}
+.checkout-page .checkout-input:focus,
+.checkout-page .checkout-phone-input:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* The complete botanical image must fit above the bottom of the page. */
+.checkout-page .d107,
+.checkout-page .d109 {
+  top: auto;
+  bottom: 24px;
+}
+.checkout-page .d107 img,
+.checkout-page .d109 img {
+  object-fit: contain;
+}
+[data-node-id='2351:2443'] {
+  top: 550px;
+}
+
+@media (min-width: 768px) {
+  .cart-panel .cart-total {
+    height: auto;
+    min-height: 44px;
+    font-size: 28px;
+    line-height: 38px;
+    flex: none;
+  }
+  .cart-panel .cart-total strong {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+
+.payment .payment-details-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: max-content;
+  color: #9e0521;
+  white-space: nowrap;
+}
+.payment-details-link svg {
+  flex: none;
+  display: block;
+  /* Align with the visible letters, including descenders, rather than the line box. */
+  transform: translateY(2px);
+}
+
+.header [data-node-id='2351:2500'] {
+  margin-left: 0;
+  gap: 48px;
+  overflow: visible;
+}
+.header [data-node-id='2351:2500'] > a,
+.header [data-node-id='2351:2500'] > a[aria-current],
+.header [data-node-id='2351:2500'] > a:hover {
+  --nav-red-start: 0%;
+  --nav-red-end: 0%;
+  flex: none;
+  color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #0d171a 0%,
+    #0d171a var(--nav-red-start),
+    #9e0f21 var(--nav-red-start),
+    #9e0f21 var(--nav-red-end),
+    #0d171a var(--nav-red-end),
+    #0d171a 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: none;
+}
+@media (forced-colors: active) {
+  .header [data-node-id='2351:2500'] > a {
+    background: none;
+    color: LinkText;
+  }
+  .header [data-node-id='2351:2500'] > a[aria-current] {
+    color: Highlight;
+  }
+}

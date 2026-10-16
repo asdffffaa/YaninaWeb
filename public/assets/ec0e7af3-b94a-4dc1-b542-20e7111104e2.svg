@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="YouTube">
+<path id="Vector" d="M39.5833 10.4167H10.4167C5.81429 10.4167 2.08333 14.1476 2.08333 18.75V33.3333C2.08333 37.9357 5.81429 41.6667 10.4167 41.6667H39.5833C44.1857 41.6667 47.9167 37.9357 47.9167 33.3333V18.75C47.9167 14.1476 44.1857 10.4167 39.5833 10.4167Z" fill="url(#paint0_linear_0_39)"/>
+<path id="Vector_2" d="M20.8333 18.75L33.3333 26.0417L20.8333 33.3333V18.75Z" fill="#FAF6F1"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_39" x1="2.08333" y1="26.0417" x2="47.9167" y2="26.0417" gradientUnits="userSpaceOnUse">
+<stop stop-color="#B83352"/>
+<stop offset="1" stop-color="#8F1A33"/>
+</linearGradient>
+</defs>
+</svg>

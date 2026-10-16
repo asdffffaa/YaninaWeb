@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Flag / Ukraine" clip-path="url(#clip0_0_34)">
+<path id="Vector" d="M2 0H20C20.5304 0 21.0391 0.210714 21.4142 0.585786C21.7893 0.960859 22 1.46957 22 2V8H0V2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0Z" fill="#0057B7"/>
+<path id="Vector_2" d="M0 8H22V14C22 14.5304 21.7893 15.0391 21.4142 15.4142C21.0391 15.7893 20.5304 16 20 16H2C1.46957 16 0.960859 15.7893 0.585786 15.4142C0.210714 15.0391 0 14.5304 0 14V8Z" fill="#FFD700"/>
+</g>
+<defs>
+<clipPath id="clip0_0_34">
+<rect width="22" height="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>
